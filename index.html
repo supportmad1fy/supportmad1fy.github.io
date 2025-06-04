@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-site-verification" content="googlef3fccd42739c65c3"/>
+  <title>SUPPORT.mad1fy</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"/>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .container {
+      text-align: center;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    .logo-text {
+      font-size: 48px;
+      color: #00f0ff;
+      text-shadow:
+        0 0 5px #00f0ff,
+        0 0 10px #00f0ff,
+        0 0 20px #00f0ff,
+        0 0 40px #00f0ff;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00f0ff;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #00f0ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="container">
+    <div class="logo-text">SUPPORT.<span style="color: white">mad1fy</span></div>
+    <div class="subtitle">Cybersecurity Support & Ethical Hacking</div>
+	<div class="subtitle">Tech & Hardware/Software Support</div>
+    <div class="social-icons">
+      <a href="https://instagram.com/support.mad1fy" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:mad1fycybersec@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/201121864109" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 SUPPORT.mad1fy | 
+    <a href="mailto:mad1fycybersec@gmail.com">mad1fycybersec@gmail.com</a> | 
+    <a href="https://wa.me/201121864109" target="_blank">01121864109</a>
+  </footer>
+
+  <!-- particles.js script -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        color: { value: "#00f0ff" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#00f0ff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse"
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
