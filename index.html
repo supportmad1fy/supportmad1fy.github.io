@@ -19,11 +19,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
+      overflow: auto;
+      flex-direction: column;
     }
 
     #particles-js {
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 100%;
       top: 0;
@@ -35,6 +36,7 @@
       text-align: center;
       z-index: 2;
       padding: 20px;
+      max-width: 800px;
     }
 
     .logo-text {
@@ -51,7 +53,13 @@
     .subtitle {
       font-size: 16px;
       color: #ccc;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
+    }
+
+    .need-help {
+      margin: 20px 0;
+      font-size: 18px;
+      color: #00f0ff;
     }
 
     .social-icons a {
@@ -66,13 +74,47 @@
       color: #00f0ff;
     }
 
+    .about-section {
+      margin-top: 40px;
+      text-align: left;
+      background-color: rgba(0, 240, 255, 0.05);
+      border: 1px solid #00f0ff;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .about-section h2 {
+      color: #00f0ff;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .about-section p {
+      font-size: 14px;
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .about-links a {
+      display: inline-block;
+      margin: 5px 10px;
+      color: #00f0ff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .about-links a:hover {
+      text-decoration: underline;
+    }
+
     footer {
-      position: absolute;
-      bottom: 10px;
+      position: relative;
+      margin-top: 40px;
       width: 100%;
       text-align: center;
       font-size: 14px;
       color: #aaa;
+      z-index: 2;
     }
 
     footer a {
@@ -86,11 +128,26 @@
   <div class="container">
     <div class="logo-text">SUPPORT.<span style="color: white">mad1fy</span></div>
     <div class="subtitle">Cybersecurity Support & Ethical Hacking</div>
-	<div class="subtitle">Tech & Hardware/Software Support</div>
+    <div class="subtitle">Tech & Hardware/Software Support</div>
+    
+    <div class="need-help">Need help? Message us through any of the links below or email us directly.</div>
+    
     <div class="social-icons">
       <a href="https://instagram.com/support.mad1fy" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="mailto:mad1fycybersec@gmail.com"><i class="fas fa-envelope"></i></a>
       <a href="https://wa.me/201121864109" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="about-section">
+      <h2>About mad1fy</h2>
+      <p>I'm Seif Abdelrahman Askar, also known as <strong>mad1fy</strong> — a tech specialist, cybersecurity enthusiast, and problem solver based in Egypt. I help people with ethical hacking, hardware fixes, software issues, and provide digital protection along with defending from attacks.</p>
+      <p>You can explore more of my work and projects on my main website and social links below.</p>
+      <div class="about-links">
+        <a href="https://mad1fyjourn3y.github.io/" target="_blank">🌐 Main Website</a>
+        <a href="https://github.com/mad1fyjourn3y" target="_blank">💻 GitHub</a>
+        <a href="https://instagram.com/mad1fy_" target="_blank">📸 Instagram</a>
+        <a href="mailto:mad1fycybersec@gmail.com">✉️ Email</a>
+      </div>
     </div>
   </div>
 
